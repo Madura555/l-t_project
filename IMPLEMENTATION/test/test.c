@@ -6,10 +6,10 @@
 #define PROJECT_NAME    "Transformer"
 
 /* Prototypes for all the test functions */
-void losses(void);
-void efficiency(void);
-void regulationt(void);
-void core_dimensions(void);
+float losses(Ilv,Ihv,R_lv,R_hv,Hw,D,a,Ai);
+float efficiency(Q,P_tot);
+float regulation(Vp,Ip,Rp,Xp);
+float core_dimensions(Ai,F,B);
 
 /* Required by the unity test framework */
 void setUp(){}
@@ -33,33 +33,29 @@ int main()
 }
 
 /* Write all the test functions */ 
-void losses(void) {
-  TEST_ASSERT_EQUAL(30, losses(200,400,20,20,5,60,20,40));
-  TEST_ASSERT_EQUAL(-10, losses(100,300,30,40,50,60,10));
-  TEST_ASSERT_EQUAL(-30, losses(1000,500,70,80,90,10,45));
-  TEST_ASSERT_EQUAL(10, losses(75,52,100,30,26,20,19,10));
+float losses(Ilv,Ihv,R_lv,R_hv,Hw,D,a,Ai)
+{
+   losses(200,400,20,20,5,60,20,40);
+  losses(100,300,30,40,50,60,10);
+  losses(1000,500,70,80,90,10,45);
+losses(75,52,100,30,26,20,19,10);
 }
-void losses_testcase2(void) {
+
+float efficiency(Q,P_tot) {
+  efficiency(90,110);
+  
+  
+}
+
+float regulation(Vp,Ip,Rp,Xp) {
+  regulation(1000,60,100,20);
+  
+  /* Dummy fail*/
  
-  /* Dummy fail*/
-  // TEST_ASSERT_EQUAL(1500, add(750, 7500));
-}
-void efficiency(void) {
-  TEST_ASSERT_EQUAL(-3,efficiency(90,110));
-  
-  /* Dummy fail*/
-  // TEST_ASSERT_EQUAL(1, efficiency(1000, 900));
 }
 
-void regulation(void) {
-  TEST_ASSERT_EQUAL(0, regulation(1000,60,100,20));
-  
-  /* Dummy fail*/
-  // TEST_ASSERT_EQUAL(2, regulation(20000,500,60,30));
-}
-
-void core_dimensionse(void) {
-  TEST_ASSERT_EQUAL(0, core_dimensions(10,20,30));
+float core_dimensionse(Ai,F,B) {
+  core_dimensions(10,20,30);
   
   /* Dummy fail*/
   // TEST_ASSERT_EQUAL(3, divide(2,2,2));
