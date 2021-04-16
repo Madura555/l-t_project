@@ -6,6 +6,9 @@ In this project an electrical transformer is designed and its corressponding los
  https://github.com/Madura555/l-t_project/blob/9deec0523cd27036f18c0f1bafccfb4223573081/REQUIREMENTS/Untitled%20Diagram.png
  
  
+ CREDITS: http://freesourcecode.net/cprojects/96386/Electrical-transformer-design-program%2C-with-graphical-output.
+ 
+ 
  
  
  
