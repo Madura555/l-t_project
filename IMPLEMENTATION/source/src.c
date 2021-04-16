@@ -62,5 +62,6 @@ float losses();
 float efficiency();
 float regulation();
 float core_dimensions(float Ai,float F,float B);
+	return 0;
 
 }
