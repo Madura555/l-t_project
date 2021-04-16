@@ -3,7 +3,7 @@
 
 In this project an electrical transformer is designed and its corressponding losses are calculated for providing high efficiency.
  
- 
+ https://github.com/Madura555/l-t_project/blob/9deec0523cd27036f18c0f1bafccfb4223573081/REQUIREMENTS/Untitled%20Diagram.png
  
  
  
